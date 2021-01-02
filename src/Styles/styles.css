@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: greenyellow;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border : rgb(65,58,213) 18px solid;
+    padding: 45px;
+}
+
+.container .navigation {
+    display: flex;
+    color: rgb(65,58,213);
+}
+
+.container .navigation .logo {
+    flex: 4;
+}
+
+.container .navigation .navBar {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .navigation .logo h1:hover {
+    cursor: pointer;
+}
+
+.container .navigation .navBar a {
+    text-decoration: none;
+}
+
+.container .navigation .navBar .active {
+    border-bottom: black 3px solid;
+}
+
+.container .mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(65,58,213);
+}
+
+.container .mainPage .imageHero #image {
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 16px black;
+    border-radius: 20px;
+    margin-left: 45px;
+    position: relative;
+}
+
+.container .mainPage .desc h1 {
+    font-size: 80px;
+}
+
+.container .mainPage .desc p {
+    font-size: 40px;
+}
+
+.container .mainPage .imageHero p {
+    position: absolute;
+    right: 20%;
+    top: 70%;
+    color: whitesmoke;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black;
+}
